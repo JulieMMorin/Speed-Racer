@@ -6,6 +6,7 @@ public class SpeedRacer : MonoBehaviour
     string engineType = V6, Twin Turbo;
     int carWeight = 1609;
     int yearMade = 2009;
+    float maxAcceleration = 0.98;
 
     // Start is called before the first frame update
     void Start()
