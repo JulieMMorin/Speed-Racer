@@ -37,7 +37,7 @@ public class SpeedRacer : MonoBehaviour
     int CalculateAge(int number)
     {
         int result;
-        result = 2021 - yearMade;
+        result = 2021 - number;
         return result;
 
     }
