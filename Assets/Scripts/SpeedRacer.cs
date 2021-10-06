@@ -35,7 +35,7 @@ public class SpeedRacer : MonoBehaviour
         if (carWeight < 1500)
             print("The string carModel weighs less than 1500kg.");
         else if (carWeight > 1500)
-            print("The sting carModel weighs more than 1500kg.");
+            print("The string carModel weighs more than 1500kg.");
 
 
     }
