@@ -13,7 +13,7 @@ public class SpeedRacer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        System.Console.WriteLine("RaceCar is a GTR R35. It has a V6 Twin Turbo Engine.");
+        Unity.Console.WriteLine("RaceCar is a GTR R35. It has a V6 Twin Turbo Engine.");
 
     }
 
