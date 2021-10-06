@@ -15,7 +15,6 @@ public class SpeedRacer : MonoBehaviour
     {
         Console.WriteLine("RaceCar is a GTR R35. It has a V6 Twin Turbo Engine.");
 
-        CheckWeight 
     }
 
     // Update is called once per frame
