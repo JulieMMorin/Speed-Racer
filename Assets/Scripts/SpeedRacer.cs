@@ -14,13 +14,19 @@ public class SpeedRacer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        print("RaceCar is a GTR R35. It has a V6 Twin Turbo Engine.");
+        print("RaceCar is a " + carModel + ". It has a " + engineType + " engine.");
 
         CheckWeight();
-        if (yearMade = 2009)
-            print("The car was introduced in yearMade.");
-        if (yearMade < 2009)
-            print("The car was introduced in yearMade.");
+
+        if (yearMade <= 2009)
+        {
+            print("The car was introduced in " + yearMade);
+        }
+        else
+        {
+            print("The car was introduced in " + yearMade);
+        }
+        //this is where I gave up on Wednesday. part 4a
 
         CalculateAge(yearMade);
         
@@ -33,9 +39,9 @@ public class SpeedRacer : MonoBehaviour
     void CheckWeight()
     {
         if (carWeight < 1500)
-            print("The string carModel weighs less than 1500kg.");
+            print("The " + carModel + " weighs less than 1500kg.");
         else if (carWeight > 1500)
-            print("The string carModel weighs more than 1500kg.");
+            print("The " + carModel + " weighs more than 1500kg.");
 
 
     }
