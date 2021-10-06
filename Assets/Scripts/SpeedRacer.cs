@@ -7,6 +7,8 @@ public class SpeedRacer : MonoBehaviour
     int carWeight = 1609;
     int yearMade = 2009;
     float maxAcceleration = 0.98;
+    bool isCarTypeSedan = false
+
 
     // Start is called before the first frame update
     void Start()
