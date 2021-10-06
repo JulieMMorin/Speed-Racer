@@ -18,10 +18,10 @@ public class SpeedRacer : MonoBehaviour
         CheckWeight();
         void CheckWeight()
         { 
-            if (carWeight < 1500) 
-                print("The carModel weighs less than 1500kg.")
-             else if (carWeight > 1500)       
-                print("The carModel weighs more than 1500kg.")    
+            if (carWeight < 1500)
+                System.Console.WriteLine("The carModel weighs less than 1500kg.")
+             else if (carWeight > 1500)
+                System.Console.WriteLine("The carModel weighs more than 1500kg.")    
                     
                     }
             
