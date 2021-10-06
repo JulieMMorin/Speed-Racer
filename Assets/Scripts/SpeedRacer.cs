@@ -16,17 +16,22 @@ public class SpeedRacer : MonoBehaviour
         print("RaceCar is a GTR R35. It has a V6 Twin Turbo Engine.");
 
         CheckWeight();
-
-
+        CalculateAge();
+        
 
 
     }
     void CheckWeight()
     {
         if (carWeight < 1500)
-            print("The carModel weighs less than 1500kg.");
+            print("The string carModel weighs less than 1500kg.");
         else if (carWeight > 1500)
-            print("The carModel weighs more than 1500kg.");
+            print("The sting carModel weighs more than 1500kg.");
+
+
+    }
+    int CalculateAge(2021 - int yearMade)
+    {
 
 
     }
