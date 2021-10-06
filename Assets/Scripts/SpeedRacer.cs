@@ -15,6 +15,18 @@ public class SpeedRacer : MonoBehaviour
     {
         System.Console.WriteLine("RaceCar is a GTR R35. It has a V6 Twin Turbo Engine.");
 
+        CheckWeight();
+        void CheckWeight()
+        { 
+            if (carWeight < 1500) 
+                print("The carModel weighs less than 1500kg.")
+             else if (carWeight > 1500)       
+                print("The carModel weighs more than 1500kg.")    
+                    
+                    }
+            
+     
+
     }
 
     // Update is called once per frame
