@@ -17,16 +17,13 @@ public class SpeedRacer : MonoBehaviour
         print("RaceCar is a GTR R35. It has a V6 Twin Turbo Engine.");
 
         CheckWeight();
-        CalculateAge();
+        CalculateAge(yearMade);
         
 
 
     }
 
-    private void CalculateAge()
-    {
-        throw new NotImplementedException();
-    }
+    
 
     void CheckWeight()
     {
