@@ -17,6 +17,11 @@ public class SpeedRacer : MonoBehaviour
         print("RaceCar is a GTR R35. It has a V6 Twin Turbo Engine.");
 
         CheckWeight();
+        if (yearMade = 2009)
+            print("The car was introduced in yearMade.");
+        if (yearMade < 2009)
+            print("The car was introduced in yearMade.");
+
         CalculateAge(yearMade);
         
 
