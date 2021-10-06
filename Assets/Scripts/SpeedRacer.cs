@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class SpeedRacer : MonoBehaviour
@@ -21,6 +22,12 @@ public class SpeedRacer : MonoBehaviour
 
 
     }
+
+    private void CalculateAge()
+    {
+        throw new NotImplementedException();
+    }
+
     void CheckWeight()
     {
         if (carWeight < 1500)
@@ -30,9 +37,10 @@ public class SpeedRacer : MonoBehaviour
 
 
     }
-    int CalculateAge(2021 - int yearMade)
+    int CalculateAge(int number)
     {
-
+        int result;
+        result = 2021 - int yearMade;
 
     }
     // Update is called once per frame
