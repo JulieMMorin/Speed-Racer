@@ -17,6 +17,7 @@ public class SpeedRacer : MonoBehaviour
         print("RaceCar is a " + carModel + ". It has a " + engineType + " engine.");
 
         CheckWeight();
+        CheckCharacteristics();
 
         if (yearMade <= 2009)
         {
@@ -36,16 +37,22 @@ public class SpeedRacer : MonoBehaviour
             print("The car was introduced in the 2010s");
             print("The car's max acceleration is " + maxAcceleration);
         }
-      
-
-        
-        
 
 
+        string CheckCharacteristics();
+         {
+            if (isCarTypeSedan);
+            print("Car is a sedan.");
+            else if (hasFrontEngine);
+                print("The car has a front engine.");
+            else
+                print("The car is neither a sedan nor does it have a front engine.");
+            }
     }
 
-    void CheckCharacteristics()
-
+    
+    
+    
     void CheckWeight()
     {
         if (carWeight < 1500)
