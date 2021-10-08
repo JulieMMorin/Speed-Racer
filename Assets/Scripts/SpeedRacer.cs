@@ -38,16 +38,25 @@ public class SpeedRacer : MonoBehaviour
             print("The car's max acceleration is " + maxAcceleration);
         }
 
+        string CheckCharacteristics()
+        {
+           
+            if (isCarTypeSedan)
+            {
+                return "The car is a sedan type.";
 
-        string CheckCharacteristics();
-         {
-            if (isCarTypeSedan);
-            print("Car is a sedan.");
-            else if (hasFrontEngine);
-                print("The car has a front engine.");
-            else
-                print("The car is neither a sedan nor does it have a front engine.");
             }
+            else if (hasFrontEngine)
+            {
+                return "The car is not a sedan, but has a front engine.";
+
+            }
+            else
+            {
+                return "The car is neither a sedan, nor is its engine a front engine.";
+            }
+        }
+
     }
 
     
