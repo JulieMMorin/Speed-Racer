@@ -21,6 +21,15 @@ public class SpeedRacer : MonoBehaviour
         if (yearMade <= 2009)
         {
             print("The car was introduced in " + yearMade);
+            CalculateAge(yearMade);
+            int CalculateAge(int yearMade)
+            {
+                int carAge;
+                carAge = 2021 - yearMade;
+                return carAge;
+
+            }
+            print("The car is " + carAge + "years old.")
         }
         else
         {
@@ -28,7 +37,7 @@ public class SpeedRacer : MonoBehaviour
         }
         //this is where I gave up on Wednesday. part 4a
 
-        CalculateAge(yearMade);
+        
         
 
 
@@ -45,14 +54,7 @@ public class SpeedRacer : MonoBehaviour
 
 
     }
-    int CalculateAge(int yearMade)
-    {
-        int carAge;
-        carAge = 2021 - yearMade;
-        return carAge;
-
-
-    }
+    
     // Update is called once per frame
     void Update()
     {
