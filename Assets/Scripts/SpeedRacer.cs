@@ -24,18 +24,19 @@ public class SpeedRacer : MonoBehaviour
             CalculateAge(yearMade);
             int CalculateAge(int yearMade)
             {
-                int carAge;
-                carAge = 2021 - yearMade;
-           
+                return 2021 - yearMade;
 
+                int carAge = CalculateAge(yearMade);
+                print("The car is " + carAge + "years old.");
             }
-            print("The car is " + carAge + "years old.")
+            
         }
         else
         {
-            print("The car was introduced in " + yearMade);
+            print("The car was introduced in the 2010s");
+            print("The car's max acceleration is " + maxAcceleration);
         }
-        //this is where I gave up on Wednesday. part 4a
+      
 
         
         
@@ -43,7 +44,7 @@ public class SpeedRacer : MonoBehaviour
 
     }
 
-    
+    void CheckCharacteristics()
 
     void CheckWeight()
     {
