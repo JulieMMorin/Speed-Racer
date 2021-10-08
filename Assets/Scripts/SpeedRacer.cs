@@ -45,11 +45,12 @@ public class SpeedRacer : MonoBehaviour
 
 
     }
-    int CalculateAge(int number)
+    int CalculateAge(int yearMade)
     {
-        int result;
-        result = 2021 - number;
-        return result;
+        int carAge;
+        carAge = 2021 - yearMade;
+        return carAge;
+
 
     }
     // Update is called once per frame
