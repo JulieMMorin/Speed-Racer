@@ -17,9 +17,14 @@ public class SpeedRacer : MonoBehaviour
     {
         public int fuelLevel;
 
-        public Fuel
-
+        public Fuel(int amount)
+        {
+            fuelLevel = amount;
+        }
     }
+    public Fuel carFuel = new Fuel(100);
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +45,7 @@ public class SpeedRacer : MonoBehaviour
                 int carAge = CalculateAge(yearMade);
                 print("The car is " + carAge + "years old.");
             }
-            
+
         }
         else
         {
@@ -50,7 +55,7 @@ public class SpeedRacer : MonoBehaviour
 
         string CheckCharacteristics()
         {
-           
+
             if (isCarTypeSedan)
             {
                 return "The car is a sedan type.";
@@ -69,9 +74,9 @@ public class SpeedRacer : MonoBehaviour
 
     }
 
-    
-    
-    
+
+
+
     void CheckWeight()
     {
         if (carWeight < 1500)
@@ -81,10 +86,31 @@ public class SpeedRacer : MonoBehaviour
 
 
     }
-    
+
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ConsumeFuel();
+            CheckFuelLevel();
+        }
     }
+        void ConsumeFuel();
+        carFuel.fuelLevel = carFuel.fuelLevel - 10;
+
+        void CheckFuelLevel()
+        {
+            switch (carFuel.fuelLevel)
+            {
+            Case 70:
+                Print(“fuel level is nearing two - thirds.”);
+
+            }
+
+        }
+
+    
+        
+    
 }
